@@ -1,0 +1,39 @@
+{
+  "schemaVersion": 1,
+  "id": "grabz",
+  "version": "${version}",
+
+  "name": "Grabz",
+  "description": "Adds block/item/entity grabbing capabilities.",
+  "authors": [ "The Lazurite Team" ],
+  "contact": {
+    "homepage": "https://lazurite.dev",
+    "sources": "https://github.com/lazuritemc/grabz",
+    "issues": "https://github.com/lazuritemc/grabz/issues"
+  },
+
+  "license": "MIT",
+  "icon": "assets/grabz/icon.png",
+
+  "environment": "*",
+  "entrypoints": {
+    "main": [ "dev.lazurite.grabz.Grabz" ],
+    "client": [ "dev.lazurite.grabz.Grabz"]
+  },
+
+  "depends": {
+    "fabricloader": ">=0.7.4",
+    "fabric": "*",
+    "minecraft": "1.16.x"
+  },
+
+  "suggests": {
+    "flamingo": "*"
+  },
+
+  "custom": {
+    "modmenu": {
+      "links": { "modmenu.discord": "https://discord.gg/NNPPHN7b3P" }
+    }
+  }
+}

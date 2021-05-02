@@ -1,0 +1,40 @@
+{
+  "schemaVersion": 1,
+  "id": "grabz-core",
+  "version": "${version}",
+
+  "name": "Grabz Core",
+  "description": "The backend of Grabz.",
+  "authors": [ "The Lazurite Team" ],
+  "contact": {
+    "homepage": "https://lazurite.dev",
+    "sources": "https://github.com/lazuritemc/grabz",
+    "issues": "https://github.com/lazuritemc/grabz/issues"
+  },
+
+  "license": "MIT",
+  "icon": "assets/grabz/icon.png",
+  "mixins": [ "grabz-core.mixins.json" ],
+
+  "environment": "*",
+  "entrypoints": {
+    "main": [ "dev.lazurite.grabz.core.GrabzCore" ],
+    "client": [ "dev.lazurite.grabz.core.GrabzCoreClient" ]
+  },
+
+  "depends": {
+    "fabricloader": ">=0.7.4",
+    "fabric": "*",
+    "minecraft": "1.16.x"
+  },
+
+  "suggests": {
+    "flamingo": "*"
+  },
+
+  "custom": {
+    "modmenu": {
+      "links": { "modmenu.discord": "https://discord.gg/NNPPHN7b3P" }
+    }
+  }
+}
